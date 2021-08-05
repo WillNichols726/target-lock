@@ -9,21 +9,23 @@ Hooks.on('renderChatMessage', async (message, html, data) => {
     , isD20 = isRoll && message.roll && 20 === (null === (_a = message.roll.dice[0]) || void 0 === _a ? void 0 : _a.faces) || !1;
     if (!isRoll || isD20 || fromRollTable)
         return;
+    
+    const $targets = $(await renderTemplate("modules/target-lock/templates/target-list.html", Array.from(data.author.targets)));
+    html.append($targets);
+
+    //foreach target
+        //render Buttons
+        //add callbacks
 
 
+//     const $targetsUI = Array.from(data.author.targets).map(element => {
+//         //duplicate buttons for each target
+//         var innerHTML = $(await renderTemplate("systems/pf2e/templates/chat/damage/buttons.html", Array.from(data.author.targets)));
+//         return innerHTML;
+//     });
 
-    const buttons = $(await renderTemplate("systems/pf2e/templates/chat/damage/buttons.html", Array.from(data.author.targets)));
-
-
-
-    const $targetsUI = Array.from(data.author.targets).map(element => {
-        //duplicate buttons for each target
-        var innerHTML = $(await renderTemplate("systems/pf2e/templates/chat/damage/buttons.html", Array.from(data.author.targets)));
-        return innerHTML;
-    });
-
-    const $targets = $(await renderTemplate("modules/target-lock/templates/target-list.html", Array.from($targetsUI)));
-    html.append($targets)
+//     const $targets = $(await renderTemplate("modules/target-lock/templates/target-list.html", Array.from($targetsUI)));
+//     html.append($targets)
    
 
 });
