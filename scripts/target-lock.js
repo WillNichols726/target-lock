@@ -161,24 +161,28 @@ Hooks.on("renderChatMessage", async (message, html, data) => {
             applyTokenDamage(html, target.data._id, 1, event.shiftKey);
             //applyDamage(innerHTML, 1, event.shiftKey);
         });
+        full.removeClass('full-damage');
 
         half.on('click', (event) => {
             console.log("target-lock | Half Damage");
             applyTokenDamage(html, target.data._id, 0.5, event.shiftKey);
             //applyDamage(innerHTML, 1, event.shiftKey);
         });
+        half.removeClass('half-damage');
 
         double.on('click', (event) => {
             console.log("target-lock | Double Damage");
             applyTokenDamage(html, target.data._id, 2, event.shiftKey);
             //applyDamage(innerHTML, 1, event.shiftKey);
         });
+        double.removeClass('double-damage');
 
         heal.on('click', (event) => {
             console.log("target-lock | Heal Damage");
             applyTokenDamage(html, target.data._id, -1, event.shiftKey);
             //applyDamage(innerHTML, 1, event.shiftKey);
         });
+        heal.removeClass('heal-damage');
 
         html.find('div.target-lock-chat-window').append("<span class='target-lock-target-name flavor-text'><b>Target: " + target.data.name +  "</b></span>");
         html.find('div.target-lock-chat-window').append(innerHTML);   
