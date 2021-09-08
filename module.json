@@ -11,14 +11,15 @@
         "url": "https://github.com/WillNichols726"
       }
     ],
-    "url": "https://github.com/WillNichols726/target-lock",   
+    
     "scripts": [
       "scripts/target-lock.js"
     ],
     "styles": [
       "styles/target-lock.css"
-    ]
+    ],
 
-
-
+    "url": "https://github.com/WillNichols726/target-lock",
+    "manifest": "https://raw.githubusercontent.com/WillNichols726/target-lock/release/module.json",
+    "download": "https://github.com/WillNichols726/target-lock/releases/tag/v0.1-alpha"
   }
