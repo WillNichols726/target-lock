@@ -1,18 +1,24 @@
 {
     "name": "target-lock",
-    "title": "aaaa Target Lock",
+    "title": "Target Lock",
     "description": "A module which helps apply damage to targets.",
+    "version": "0.1",
+    "minimumCoreVersion": "0.8.8",
+    "system":["pf2e"],
     "authors": [
       {
-        "name": "Will Nichols"
+        "name": "Will Nichols",
+        "url": "https://github.com/WillNichols726"
       }
     ],
+    "url": "https://github.com/WillNichols726/target-lock",   
     "scripts": [
       "scripts/target-lock.js"
     ],
     "styles": [
       "styles/target-lock.css"
-    ],
-    "version": "0.0.1",
-    "minimumCoreVersion": "0.8.8"
+    ]
+
+
+
   }
