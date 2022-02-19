@@ -47,16 +47,18 @@ async function applyActorDamage(
         const modifiedByGM = modifier !== 0 ? `Modified by GM: ${modifier < 0 ? '-' : '+'}${modifier}` : '';
         const by = game.i18n.localize('PF2E.UI.applyDamage.by');
         const hitpoints = game.i18n.localize('PF2E.HitPointsHeader').toLowerCase();
-        const message = await renderTemplate('systems/pf2e/templates/chat/damage/result-message.html', {
-            flavorText,
-            by,
-            messageSender,
-            modifiedByGM,
-            actor: token.name,
-            shieldFlavor,
-            appliedResult,
-            hitpoints,
-        });
+        // Temporary hard code the message until new rendering can be figured out
+//         const message = await renderTemplate('systems/pf2e/templates/chat/damage/result-message.html', {
+//             flavorText,
+//             by,
+//             messageSender,
+//             modifiedByGM,
+//             actor: token.name,
+//             shieldFlavor,
+//             appliedResult,
+//             hitpoints,
+//         });
+        const message = token.name + " was " + appliedResult + " " + hitpoints;
         actor.modifyTokenAttribute(attribute, value * -1, true, true, shield).then(() => {
             const data = {
                 user: game.user._id,
