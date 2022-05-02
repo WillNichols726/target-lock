@@ -1,5 +1,57 @@
 .target-lock-chat-window .chat-damage-buttons {   
     margin-bottom: 5px;
+    display: flex;
+}
+.chat-damage-buttons{
+    display:flex;
+    margin-top:3px
+}
+.target-lock-chat-window .chat-damage-buttons button{
+    flex:1 1 0;
+    font-size:18px;
+    line-height:.5em;
+    position:relative;
+    width:52px
+}
+.target-lock-chat-window .chat-damage-buttons button>i.fas{
+    left:1px;
+    position:relative;
+    top:1px;
+    vertical-align:top
+}
+.target-lock-chat-window .chat-damage-buttons button>.transparent-half{
+    background:#eee;
+    display:block;
+    height:24px;
+    left:48%;
+    opacity:.6;
+    position:absolute;
+    top:0;
+    width:16px
+}
+.target-lock-chat-window .chat-damage-buttons button .plus{
+    color:ivory;
+    font-size:17px;
+    font-weight:700;
+    left:40%;
+    position:absolute;
+    top:6px
+}
+.target-lock-chat-window .chat-damage-buttons button>img{
+    border:none;
+    height:19px;
+    position:relative;
+    top:2px
+}
+.target-lock-chat-window .chat-damage-buttons button .label{
+    font-size:.4em;
+    text-transform:uppercase
+}
+.target-lock-chat-window .chat-damage-buttons.includes-fumble>button.triple-damage>img{
+    left:-1px
+}
+.target-lock-chat-window .chat-damage-buttons.includes-fumble span.plus{
+    left:16px
 }
 .target-lock-chat-window .target-lock-target-name {
     font-size: 12px;
