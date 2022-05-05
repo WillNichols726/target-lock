@@ -12,6 +12,11 @@
       }
     ],
     
+    "templates": [
+      "templates/buttons.html",
+      "templates/target-list.html"
+    ],
+    
     "scripts": [
       "scripts/target-lock.js"
     ],
