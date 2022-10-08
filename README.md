@@ -1,4 +1,6 @@
 ## No Longer Maintained
+Will still work for Foundry v9
+
 ## Thanks to MrVauxs for picking up maintainence starting with Foundry v10
 ## Fork at https://github.com/MrVauxs/PF2e-Target-Damage.
 
