@@ -1,3 +1,9 @@
+## No Longer Maintained
+## Thanks to MrVauxs for picking up maintainence starting with Foundry v10
+## Fork at https://github.com/MrVauxs/PF2e-Target-Damage.
+
+
+
 ## Target Lock (alpha)
 
 ![Foundry Version](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/WillNichols726/target-lock/release/module.json)
